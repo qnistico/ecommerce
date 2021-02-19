@@ -29,7 +29,8 @@ html, body {
 
 .herocontainer img {
   width: 27.5%;
-  margin-top: 3rem;
+  margin-top: 4.1rem;
+  min-width: 375px;
 }
 
 .herocontainer .heroflex {
@@ -51,7 +52,7 @@ html, body {
 .herocontainer .herocontent {
   min-height: 100vh;
   color: black;
-  width: 50%;
+  width: 40%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -66,7 +67,7 @@ html, body {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  margin-top: 1rem;
+  margin: 0 7.75rem 0 0;
 }
 
 .herocontainer .herocontent h1 {
@@ -81,7 +82,7 @@ html, body {
 
 .herocontainer .herocontent p {
   margin-bottom: 1.5rem;
-  width: 68.1%;
+  width: 90%;
   -webkit-animation-duration: 0.75s;
           animation-duration: 0.75s;
   -webkit-animation-delay: 1s;
@@ -130,6 +131,11 @@ html, body {
 
 .featuredcontent:hover {
   top: -5px;
+}
+
+.featuredbutton {
+  text-align: center;
+  margin-top: 0.75rem;
 }
 
 .featured {
@@ -545,9 +551,12 @@ footer .fc2 img {
 }
 
 .nav-link {
-  color: black;
   margin-left: 5rem;
   font-weight: 500;
+}
+
+.mobileshow {
+  display: none;
 }
 
 @media screen and (max-width: 1360px) {
@@ -559,8 +568,55 @@ footer .fc2 img {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+}
+
+@media screen and (max-width: 991px) {
+  .navbar-nav {
+    background-color: black !important;
+  }
+  .navbar-toggler-icon {
+    background-color: white;
+    border-radius: 3px;
+  }
+  .navbar {
+    min-height: 80px !important;
+    background-color: black !important;
+  }
   .nav-link {
-    margin: 0;
+    color: white !important;
+    margin: auto;
+  }
+  .header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    -webkit-transition: height 500ms, background 500ms;
+    transition: height 500ms, background 500ms;
+  }
+  .logo {
+    width: auto;
+    height: 68px;
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+    background-color: #fafafa;
+    max-width: 200px;
+    height: auto;
+  }
+  .header.tiny {
+    max-height: 48px !important;
+  }
+  .tiny .logo {
+    max-height: 48px !important;
+    -webkit-transition: all 0.618s ease -0.1s;
+    transition: all 0.618s ease -0.1s;
+    background-color: white;
+  }
+  .mobileshow {
+    display: unset;
+  }
+  .desktopshow {
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */

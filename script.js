@@ -25,16 +25,7 @@ $(window).scroll(function() {
     }
 });
 
-window.addEventListener('DOMContentLoaded', function() {
-    var data = JSON.parse(localStorage.getItem('cart'));
-    var cart = new Cart(data);
-    cart.Render();
-   });
-   
-   function saveCart() {
-    var data = JSON.stringify(window.cart);
-    localStorage.saveItem('cart', data);
-   }
+
 
    $( '.smallimg' ).click(function(event) {
     var smallimg = (event.target.src);

@@ -29,7 +29,8 @@ html, body {
     animation-duration: 0.618s;
     img {
         width: 27.5%;
-        margin-top: 3rem;
+        margin-top: 4.1rem;
+        min-width: 375px;
     }
     .heroflex {
         display: flex;
@@ -40,13 +41,13 @@ html, body {
     .herocontent {
         min-height: 100vh;
         color: black;
-        width: 50%;
+        width: 40%;
         display: flex;
         text-align: left;
         justify-content: center;
         flex-flow: column nowrap;
         align-items: flex-start;
-        margin-top: 1rem;
+        margin: 0 7.75rem 0 0;
 h1 {
     font-weight: 700;
     font-size: clamp(38px, 4vw, 5vw);
@@ -57,7 +58,7 @@ h1 {
 
 p {
     margin-bottom: 1.5rem;
-    width: 68.1%;
+    width: 90%;
     animation-duration: 0.75s;
     animation-delay: 1s;
 
@@ -110,6 +111,10 @@ p {
     top: -5px;
 }
 
+.featuredbutton {
+    text-align: center;
+    margin-top: 0.75rem;
+}
 
 .featured {
     width: 100%;
@@ -421,10 +426,14 @@ footer {
 }
 
 .nav-link {
-    color: black;
     margin-left: 5rem;
     font-weight: 500;
 }
+
+.mobileshow {
+    display: none;
+}
+
 
 @media screen and (max-width: 1360px) {
     .featuredflex {
@@ -432,10 +441,56 @@ footer {
         margin: auto;
         flex-direction: column;
     }
-    .nav-link {
-        margin: 0;
-    }
+    
 }
 
+@media screen and (max-width: 991px) {
+    .navbar-nav {
+        background-color: black !important;
+    }
+    .navbar-toggler-icon {
+        background-color: white;
+        border-radius: 3px;
+    }
+    .navbar {
+        min-height: 80px !important;
+        background-color: black !important;
+    }
 
+    .nav-link {
+        color: white !important;
+        margin: auto;
+    }
+    .header {
+        width:100%;
+        position:fixed;
+        top:0;
+        left:0;
+        transition: height 500ms, background 500ms;
+    }
+    .logo {
+        width: auto;
+        height: 68px;
+        transition: all 0.2s linear;
+        background-color: #fafafa;
+        max-width: 200px;
+        height: auto;
+    }
+    
+    .header.tiny {
+        max-height: 48px !important;
+    }
+    
+    .tiny .logo {
+        max-height: 48px !important;
+        transition: all 0.618s ease -0.1s;
+        background-color: white;
+    }
+    .mobileshow {
+        display: unset;
+    }
 
+    .desktopshow {
+        display: none;
+    }
+}
