@@ -517,6 +517,10 @@ footer .fc2 img {
   margin-bottom: 1rem;
 }
 
+.modal-backdrop {
+  z-index: 1;
+}
+
 .fa-star,
 .fa-star-half-alt {
   color: #dc5314;
@@ -527,6 +531,19 @@ footer .fc2 img {
   transition: all 0.2s linear;
   -webkit-box-shadow: none;
           box-shadow: none;
+}
+
+.navbar .nav-link {
+  margin-left: 5rem;
+  font-weight: 500;
+}
+
+.m0 {
+  margin: 0 !important;
+}
+
+.nav-tabs {
+  background-color: #dc5314 !important;
 }
 
 .navbar-nav {
@@ -563,11 +580,6 @@ footer .fc2 img {
   -webkit-transition: all 0.618s ease -0.1s;
   transition: all 0.618s ease -0.1s;
   background-color: white;
-}
-
-.nav-link {
-  margin-left: 5rem;
-  font-weight: 500;
 }
 
 .mobileshow {
