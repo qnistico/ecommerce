@@ -36,6 +36,7 @@
     <nav class="navbar navbar-expand-lg fixed-top navbar-light header" id="header_nav">
 
         <!-- Navbar brand -->
+        <a class="navbar-brand" href="index.html"><img src="img/logotest1.png" alt="" class="logo mobileshow"></a>
   
         <!-- Collapse button -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
@@ -48,28 +49,28 @@
   
           <!-- Links -->
           <ul class="navbar-nav mr-auto">
-            <a class="navbar-brand" href="index.html"><img src="img/logotest1.png" alt="" class="logo"></a>
+  <li class="nav-item desktopshow">
+    <a class="navbar-brand" href="index.html"><img src="img/logotest1.png" alt="" class="logo"></a>
   
+  </li>
             <li class="nav-item">
-              <a class="nav-link" href="index.html">Home
-                <span class="sr-only">(current)</span>
+              <a class="nav-link hmm" href="index.html">Home
+                  <span class="sr-only">(current)</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="products.html">Products</a>
+              <a class="nav-link" href="products.html">Products</a> 
             </li>
             <li class="nav-item">
               <a class="nav-link" href="contact.html">Contact</a>
             </li>
   
             <!-- Dropdown -->
-            <li class="nav-item dropdown">
+            <li class="nav-item">
               <a class="nav-link" href="Account.html">Account</a>
             </li>
             <li class="nav-item">
-              <div class="nav-link">
-              <i class="fas fa-shopping-cart"></i>
-              </div>
+              <a href="cart.html" class="nav-link storedata"><i class="fas fa-shopping-cart"></i></a>
             </li>
   
           </ul>
@@ -77,91 +78,148 @@
   
         </div>
         <!-- Collapsible content -->
+        <!--Modal: Login / Register Form-->
+  <div class="modal fade showplease" id="modalLRForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog cascading-modal" role="document">
+      <!--Content-->
+      <div class="modal-content">
   
+        <!--Modal cascading tabs-->
+        <div class="modal-c-tabs">
+  
+          <!-- Nav tabs -->
+          <ul class="nav nav-tabs md-tabs tabs-2" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active m0" data-toggle="tab" href="#panel7" role="tab"><i class="fas fa-user mr-1"></i>
+                Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link m0" data-toggle="tab" href="#panel8" role="tab"><i class="fas fa-user-plus mr-1"></i>
+                Sign Up</a>
+            </li>
+          </ul>
+  
+          <!-- Tab panels -->
+          <div class="tab-content">
+            <!--Panel 7-->
+            <div class="tab-pane fade in show active" id="panel7" role="tabpanel">
+  
+              <!--Body-->
+              <div class="modal-body mb-1">
+                <div class="md-form form-sm mb-5">
+                  <i class="fas fa-envelope prefix"></i>
+                  <input type="email" id="modalLRInput10" class="form-control form-control-sm validate">
+                  <label data-error="wrong" data-success="right" for="modalLRInput10">Your email</label>
+                </div>
+  
+                <div class="md-form form-sm mb-4">
+                  <i class="fas fa-lock prefix"></i>
+                  <input type="password" id="modalLRInput11" class="form-control form-control-sm validate">
+                  <label data-error="wrong" data-success="right" for="modalLRInput11">Your password</label>
+                </div>
+                <div class="text-center mt-2">
+                  <button class="btn btn-info">Log in <i class="fas fa-sign-in ml-1"></i></button>
+                </div>
+              </div>
+              <!--Footer-->
+              <div class="modal-footer">
+                <div class="options text-center text-md-right mt-1">
+                  <p>Not a member? <a href="#" class="blue-text">Sign Up</a></p>
+                  <p>Forgot <a href="#" class="blue-text">Password?</a></p>
+                </div>
+                <button type="button" class="btn btn-outline-info waves-effect ml-auto" data-dismiss="modal">Close</button>
+              </div>
+  
+            </div>
+            <!--/.Panel 7-->
+  
+            <!--Panel 8-->
+            <div class="tab-pane fade" id="panel8" role="tabpanel">
+  
+              <!--Body-->
+              <div class="modal-body">
+                <div class="md-form form-sm mb-5">
+                  <i class="fas fa-envelope prefix"></i>
+                  <input type="email" id="modalLRInput12" class="form-control form-control-sm validate">
+                  <label data-error="wrong" data-success="right" for="modalLRInput12">Your email</label>
+                </div>
+  
+                <div class="md-form form-sm mb-5">
+                  <i class="fas fa-lock prefix"></i>
+                  <input type="password" id="modalLRInput13" class="form-control form-control-sm validate">
+                  <label data-error="wrong" data-success="right" for="modalLRInput13">Your password</label>
+                </div>
+  
+                <div class="md-form form-sm mb-4">
+                  <i class="fas fa-lock prefix"></i>
+                  <input type="password" id="modalLRInput14" class="form-control form-control-sm validate">
+                  <label data-error="wrong" data-success="right" for="modalLRInput14">Repeat password</label>
+                </div>
+  
+                <div class="text-center form-sm mt-2">
+                  <button class="btn btn-info">Sign up <i class="fas fa-sign-in ml-1"></i></button>
+                </div>
+  
+              </div>
+              <!--Footer-->
+              <div class="modal-footer">
+                <div class="options text-right">
+                  <p class="pt-1">Already have an account? <a href="#" class="blue-text">Log In</a></p>
+                </div>
+                <button type="button" class="btn btn-outline-info waves-effect ml-auto" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+            <!--/.Panel 8-->
+          </div>
+  
+        </div>
+      </div>
+      <!--/.Content-->
+    </div>
+  </div>
+  <!--Modal: Login / Register Form-->
+  
+  <div class="text-center">
+    <a href="" class="btn btn-default btn-rounded my-3" data-toggle="modal" data-target="#modalLRForm">Login / Sign Up</a>
+  </div>
       </nav>
 
     <!--/.Navbar-->
 <main>
-    <div class="basket">
-        
-        <div class="basket-labels">
-          
-            <p class="item item-heading">Item</p>
-            <p class="price">Price</p>
-            <p class="quantity">Quantity</p>
-            <p class="subtotal">Subtotal</p>
-          
-        </div>
-        <div class="basket-product">
-          <div class="item">
-            <div class="product-image">
-              <img src="img/nikeshoes.jpg" alt="Placholder Image 2" class="product-frame">
-            </div>
-            <div class="product-details">
-              <h1><strong><span class="item-quantity">4</span> x Nike</strong> Running Shoes</h1>
-              <p><strong>Green, Size 18</strong></p>
-              <p>Product Code - 232321939</p>
-            </div>
-          </div>
-          <div class="price">26.00</div>
-          <div class="quantity">
-            <input type="number" value="4" min="1" class="quantity-field">
-          </div>
-          <div class="subtotal">104.00</div>
-          <div class="remove">
-            <button>Remove</button>
-          </div>
-        </div>
-        <div class="basket-product">
-          <div class="item">
-            <div class="product-image">
-              <img src="img/hat1.jpg" alt="Placholder Image 2" class="product-frame">
-            </div>
-            <div class="product-details">
-              <h1><strong><span class="item-quantity">1</span> x Vans</strong> Wool Hat</h1>
-              <p><strong>Pink, Size 10</strong></p>
-              <p>Product Code - 232321939</p>
-            </div>
-          </div>
-          <div class="price">26.00</div>
-          <div class="quantity">
-            <input type="number" value="1" min="1" class="quantity-field">
-          </div>
-          <div class="subtotal">26.00</div>
-          <div class="remove">
-            <button>Remove</button>
-          </div>
-        </div>
-      </div>
-      <aside>
-        <div class="summary">
-          <div class="summary-total-items"><span class="total-items"></span> Items in your Bag</div>
-          <div class="summary-subtotal">
-            <div class="subtotal-title">Subtotal</div>
-            <div class="subtotal-value final-value" id="basket-subtotal">130.00</div>
-            <div class="summary-promo hide">
-              <div class="promo-title">Promotion</div>
-              <div class="promo-value final-value" id="basket-promo"></div>
-            </div>
-          </div>
-          <div class="summary-delivery">
-            <select name="delivery-collection" class="summary-delivery-selection">
-                <option value="0" selected="selected">Select Collection or Delivery</option>
-               <option value="collection">Collection</option>
-               <option value="first-class">Royal Mail 1st Class</option>
-               <option value="second-class">Royal Mail 2nd Class</option>
-               <option value="signed-for">Royal Mail Special Delivery</option>
-            </select>
-          </div>
-          <div class="summary-total">
-            <div class="total-title">Total</div>
-            <div class="total-value final-value" id="basket-total">130.00</div>
-          </div>
-          <div class="summary-checkout">
-            <button class="checkout-cta">Go to Secure Checkout</button>
-          </div>
-        </div>
-      </aside>
+  <div class="container"> 
+    
+    <div id="alerts"></div>
+         <div class="cart-container">
+           <h2>Cart</h2>
+           <table>
+             <thead>
+               <tr>
+               <th><strong>Product</strong></th>
+               <th><strong>Price</strong></th>
+             </tr>
+             </thead>
+             <tbody id="carttable">
+             </tbody>
+           </table>
+           <hr>
+           <table id="carttotals">
+             <tr>
+               <td><strong>Items</strong></td>
+               <td><strong>Total</strong></td>
+             </tr>
+             <tr>
+               <td>x <span id="itemsquantity">0</span></td>
+              
+               <td>$<span id="total">0</span></td>
+             </tr></table>
+ 
+             
+           <div class="cart-buttons">  
+             <button id="emptycart">Empty Cart</button>
+             <button id="checkout">Checkout</button>
+           </div>
+         </div>
+ </div>
     <footer>
       <div class="footerflex">
         <div class="footercol fc1">
