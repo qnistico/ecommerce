@@ -71,13 +71,14 @@ html, body {
 }
 
 .herocontainer .herocontent h1 {
-  font-weight: 700;
+  font-weight: 900;
   font-size: clamp(38px, 4vw, 5vw);
   margin-bottom: 1rem;
   -webkit-animation-duration: 0.75s;
           animation-duration: 0.75s;
   -webkit-animation-delay: 0.75s;
           animation-delay: 0.75s;
+  font-family: 'Playfair Display', serif;
 }
 
 .herocontainer .herocontent p {
@@ -104,12 +105,12 @@ html, body {
 .herobutton {
   background-color: #dc5314;
   color: white;
-  font-size: 1rem;
-  font-weight: 500;
+  font-size: 1rem !important;
+  font-weight: 500 !important;
   padding: 0.5rem 1rem 0.5rem 1rem !important;
   border-radius: 45px;
   border: 2px solid #dc5314;
-  text-align: center;
+  text-align: center !important;
 }
 
 .herobutton:hover,
@@ -157,13 +158,60 @@ html, body {
   margin: 0;
 }
 
+.productgold1 {
+  width: 100%;
+}
+
+.productgold1 .productgold1flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.productgold1 .productgold1flex img {
+  width: 100%;
+}
+
+.productgold1 .productgold1flex .productgold1content {
+  width: 100%;
+  margin-left: 5rem;
+}
+
+.productgold1 .productgold1flex .productgold1content h3 {
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.productgold1 .productgold1flex .productgold1content h2 {
+  margin-bottom: 1rem;
+  font-size: 2.65rem;
+  font-weight: 900;
+  font-family: 'Playfair Display', serif;
+  color: #dc5314;
+}
+
+.productgold1 .productgold1flex .productgold1content p {
+  width: 85%;
+}
+
+.productgold1 .productgold1flex .productgold1content .buttonbox {
+  margin-top: 2rem;
+}
+
 .featured {
   width: 100%;
 }
 
 .featured h2 {
   font-size: 2rem;
-  font-weight: 700;
+  font-weight: 900;
+  font-family: 'Playfair Display', serif;
   text-align: center;
   margin-bottom: 1rem;
 }
@@ -172,7 +220,7 @@ html, body {
   height: 3px;
   width: 100px;
   margin: auto;
-  background-color: #dc5314;
+  background-color: #FA6900;
   margin-bottom: 1.5rem;
 }
 
@@ -262,6 +310,10 @@ html, body {
   color: #dc5314;
 }
 
+.quotes .quoteflex .testimonial-card h4 {
+  font-weight: 700;
+}
+
 .card-up {
   background: radial-gradient(#fff, #ffd1bc);
 }
@@ -306,12 +358,14 @@ html, body {
 .featuredspecial .featuredspecialflex .featuredspecialcontent h3 {
   margin-bottom: 2rem;
   font-size: 1.2rem;
+  font-weight: 600;
 }
 
 .featuredspecial .featuredspecialflex .featuredspecialcontent h4 {
   margin-bottom: 2rem;
   font-size: 3rem;
-  font-weight: 800;
+  font-weight: 900;
+  font-family: 'Playfair Display', serif;
 }
 
 .featuredspecial .featuredspecialflex .featuredspecialcontent p {
@@ -526,6 +580,38 @@ footer .fc2 img {
   z-index: 1;
 }
 
+.modalbutton {
+  background-color: #dc5314;
+  color: white;
+  border-radius: 45px;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.modalbutton:hover,
+.modalbutton:active {
+  background-color: #FA6900;
+  color: white;
+}
+
+.modalorange {
+  color: #dc5314;
+  font-weight: 400;
+}
+
+.modalexit {
+  color: #dc5314 !important;
+  border-radius: 45px;
+  border-color: #dc5314 !important;
+  font-weight: 500;
+}
+
+.modalexit:hover,
+.modalexit:active {
+  color: #dc5314 !important;
+  border-color: #dc5314 !important;
+}
+
 .fa-star,
 .fa-star-half-alt {
   color: #dc5314;
@@ -545,10 +631,13 @@ footer .fc2 img {
 
 .m0 {
   margin: 0 !important;
+  color: white !important;
 }
 
 .nav-tabs {
   background-color: #dc5314 !important;
+  margin: 0 !important;
+  border-radius: 0;
 }
 
 .navbar-nav {
@@ -693,8 +782,6 @@ button, input[type="submit"] {
 }
 
 button:hover, button:focus, button:active, input[type="submit"]:hover, input[type="submit"]:focus, input[type="submit"]:active {
-  background: #A7DBD8;
-  border-color: #69D2E7;
   color: #000;
   cursor: pointer;
 }
@@ -743,5 +830,12 @@ table td:nth-last-child(1) {
   color: #679996;
   padding: 0.5em 0;
   margin: 1em 0;
+}
+
+#emptycart:hover,
+#emptycart:active,
+#checkout:hover,
+#checkout:active {
+  background-color: transparent !important;
 }
 /*# sourceMappingURL=style.css.map */

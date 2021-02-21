@@ -19,12 +19,11 @@
   <!-- Your custom styles (optional) -->
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Yeseva+One&display=swap"
-    rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
     rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -66,9 +65,7 @@
           </li>
 
           <!-- Dropdown -->
-          <li class="nav-item">
-            <a class="nav-link" href="Account.html">Account</a>
-          </li>
+          
           <li class="nav-item">
             <a href="cart.html" class="nav-link storedata"><i class="fas fa-shopping-cart"></i></a>
           </li>
@@ -118,16 +115,16 @@
                 <label data-error="wrong" data-success="right" for="modalLRInput11">Your password</label>
               </div>
               <div class="text-center mt-2">
-                <button class="btn btn-info">Log in <i class="fas fa-sign-in ml-1"></i></button>
+                <button class="btn text-center herobutton w-100">Log in <i class="fas fa-sign-in ml-1"></i></button>
               </div>
             </div>
             <!--Footer-->
             <div class="modal-footer">
               <div class="options text-center text-md-right mt-1">
-                <p>Not a member? <a href="#" class="blue-text">Sign Up</a></p>
-                <p>Forgot <a href="#" class="blue-text">Password?</a></p>
+                <p>Not a member? <a href="#" class="modalorange">Sign Up</a></p>
+                <p>Forgot <a href="#" class="modalorange">Password?</a></p>
               </div>
-              <button type="button" class="btn btn-outline-info waves-effect ml-auto" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-outline-info waves-effect ml-auto modalexit" data-dismiss="modal">Exit</button>
             </div>
 
           </div>
@@ -157,16 +154,16 @@
               </div>
 
               <div class="text-center form-sm mt-2">
-                <button class="btn btn-info">Sign up <i class="fas fa-sign-in ml-1"></i></button>
+                <button class="btn herobutton w-100">Sign up <i class="fas fa-sign-in ml-1"></i></button>
               </div>
 
             </div>
             <!--Footer-->
             <div class="modal-footer">
               <div class="options text-right">
-                <p class="pt-1">Already have an account? <a href="#" class="blue-text">Log In</a></p>
+                <p class="pt-1">Already have an account? <a href="#" class="modalorange">Log In</a></p>
               </div>
-              <button type="button" class="btn btn-outline-info waves-effect ml-auto" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-outline-info waves-effect ml-auto modalexit" data-dismiss="modal">Exit</button>
             </div>
           </div>
           <!--/.Panel 8-->
@@ -180,7 +177,7 @@
 <!--Modal: Login / Register Form-->
 
 <div class="text-center">
-  <a href="" class="btn my-3" data-toggle="modal" data-target="#modalLRForm">Login / Sign Up</a>
+  <a href="#" class="btn my-3 modalbutton" data-toggle="modal" data-target="#modalLRForm">Login / Sign Up</a>
 </div>
     </nav>
 
@@ -203,6 +200,36 @@
       </div>
       
     </article>
+    <article class="productgold1">
+      <div class="productgold1flex">
+        <img src="img/nike2.png" alt="">
+        <div class="productgold1content">
+          <h3>Premium Footware</h3>
+          <h2>Nike Running Shoes</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <div class="buttonbox">
+              <a href="#" class="herobutton herobutton1">Add to Cart</a>
+              </div>
+        </div>
+      </div>
+    </article>
+    <article class="productgold1">
+      <div class="productgold1flex">
+        <div class="productgold1content">
+          <h3>Premium Wrist Watches</h3>
+          <h2>Omega Wrist Watch</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <div class="buttonbox">
+              <a href="#" class="herobutton herobutton1">Add to Cart</a>
+              </div>
+        </div>
+        <img src="img/watch3.png" alt="">
+      </div>
+    </article>
     
     <article class="featured">
       <h2 class="firsth2">Featured Products</h2>
@@ -219,7 +246,7 @@
           <i class="fas fa-star-half-alt"></i>
           </div>
           <p class="price">$75.00</p>
-                    <button class="addtocart">Add to Cart</button>
+                    <button class="addtocart herobutton w-75">Add to Cart</button>
         </div>
         <div class="featuredcontent">
           <img src="img/backpack.jpg" alt="">
@@ -232,7 +259,7 @@
             <i class="fas fa-star"></i>
             </div>
           <p class="price">$75.00</p>
-                    <button class="addtocart herobutton">Add to Cart</button>
+                    <button class="addtocart herobutton w-75">Add to Cart</button>
         </div>
         <div class="featuredcontent">
           <img src="img/hat1.jpg" alt="">
@@ -245,7 +272,7 @@
             <i class="fas fa-star-half-alt"></i>
             </div>
           <p class="price">$75.00</p>
-                    <button class="addtocart herobutton">Add to Cart</button>
+                    <button class="addtocart herobutton w-75">Add to Cart</button>
         </div>
         <div class="featuredcontent">
           <img src="img/suit1.jpg" alt="">
@@ -258,7 +285,7 @@
             <i class="fas fa-star"></i>
             </div>
           <p class="price">$75.00</p>
-                    <button class="addtocart herobutton">Add to Cart</button>
+                    <button class="addtocart herobutton w-75">Add to Cart</button>
         </div>
       </div>
     </article>
@@ -278,7 +305,7 @@
           <i class="fas fa-star-half-alt"></i>
           </div>
           <p class="price">$75.00</p>
-                    <button class="addtocart herobutton">Add to Cart</button>
+                    <button class="addtocart herobutton w-75">Add to Cart</button>
         </div>
         <div class="featuredcontent">
           <img src="img/pants2.jpg" alt="">
@@ -291,7 +318,7 @@
             <i class="fas fa-star"></i>
             </div>
           <p class="price">$75.00</p>
-                    <button class="addtocart herobutton">Add to Cart</button>
+                    <button class="addtocart herobutton w-75">Add to Cart</button>
         </div>
         <div class="featuredcontent">
           <img src="img/pants.jpg" alt="">
@@ -304,7 +331,7 @@
             <i class="fas fa-star-half-alt"></i>
             </div>
           <p class="price">$75.00</p>
-                    <button class="addtocart herobutton">Add to Cart</button>
+                    <button class="addtocart herobutton w-75">Add to Cart</button>
         </div>
         <div class="featuredcontent">
           <img src="img/watch1.jpg" alt="">
@@ -317,7 +344,7 @@
             <i class="fas fa-star"></i>
             </div>
           <p class="price">$75.00</p>
-                    <button class="addtocart herobutton">Add to Cart</button>
+                    <button class="addtocart herobutton w-75">Add to Cart</button>
         </div>
       </div>
       <div class="featuredflex">
@@ -332,7 +359,7 @@
           <i class="fas fa-star-half-alt"></i>
           </div>
           <p class="price">$75.00</p>
-                    <button class="addtocart herobutton">Add to Cart</button>
+                    <button class="addtocart herobutton w-75">Add to Cart</button>
         </div>
         <div class="featuredcontent">
           <img src="img/shoes.jpg" alt="">
@@ -345,7 +372,7 @@
             <i class="fas fa-star"></i>
             </div>
           <p class="price">$75.00</p>
-                    <button class="addtocart herobutton">Add to Cart</button>
+                    <button class="addtocart herobutton w-75">Add to Cart</button>
         </div>
         <div class="featuredcontent">
           <img src="img/shoes.jpg" alt="">
@@ -358,7 +385,7 @@
             <i class="fas fa-star-half-alt"></i>
             </div>
           <p class="price">$75.00</p>
-                    <button class="addtocart herobutton">Add to Cart</button>
+                    <button class="addtocart herobutton w-75">Add to Cart</button>
         </div>
         <div class="featuredcontent">
           <img src="img/shoes.jpg" alt="">
@@ -371,20 +398,17 @@
             <i class="fas fa-star"></i>
             </div>
           <p class="price">$75.00</p>
-                    <button class="addtocart herobutton">Add to Cart</button>
+                    <button class="addtocart herobutton w-75">Add to Cart</button>
         </div>
       </div>
     </div>
-    <div class="buttonbox featuredbutton">
-      <a href="#" class="herobutton herobutton1">View All Products</a>
-      </div>
     </article>
     <article class="featuredspecial">
       <div class="featuredspecialflex">
         <img src="img/watch2-removebg-preview.png" alt="">
         <div class="featuredspecialcontent">
           <h3>Exclusively available on Lorem</h3>
-          <h4>XR5 Premium Watch</h4>
+          <h4>XRS Premium Watch</h4>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
             incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
             laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -413,7 +437,7 @@
         </div>
         <div class="card-body">
           <!--Name-->
-          <h4 class="font-weight-bold mb-4">John Smith</h4>
+          <h4 class="mb-4">John Smith</h4>
           <hr>
           <!--Quotation-->
           <p class="dark-grey-text mt-4"><i class="fas fa-quote-left pr-2"></i>Lorem ipsum dolor sit amet eos
@@ -435,7 +459,7 @@
         </div>
         <div class="card-body">
           <!--Name-->
-          <h4 class="font-weight-bold mb-4">Mary Johnson</h4>
+          <h4 class=" mb-4">Mary Johnson</h4>
           <hr>
           <!--Quotation-->
           <p class="dark-grey-text mt-4"><i class="fas fa-quote-left pr-2"></i>Neque cupiditate assumenda in
@@ -456,7 +480,7 @@
         </div>
         <div class="card-body">
           <!--Name-->
-          <h4 class="font-weight-bold mb-4">Kaitlin Kennedy</h4>
+          <h4 class=" mb-4">Kaitlin Kennedy</h4>
           <hr>
           <!--Quotation-->
           <p class="dark-grey-text mt-4"><i class="fas fa-quote-left pr-2"></i>Delectus impedit saepe officiis

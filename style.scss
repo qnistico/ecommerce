@@ -49,11 +49,12 @@ html, body {
         align-items: flex-start;
         margin: 0 7.75rem 0 0;
 h1 {
-    font-weight: 700;
+    font-weight: 900;
     font-size: clamp(38px, 4vw, 5vw);
     margin-bottom: 1rem;
     animation-duration: 0.75s;
     animation-delay: 0.75s;
+    font-family: 'Playfair Display', serif;
 }
 
 p {
@@ -81,12 +82,12 @@ p {
 .herobutton {
     background-color: rgb(220, 83, 20);
     color: white;   
-    font-size: 1rem;
-    font-weight: 500;
+    font-size: 1rem !important;
+    font-weight: 500 !important;
     padding: 0.5rem 1rem 0.5rem 1rem !important;
     border-radius: 45px;
     border: 2px solid rgb(220, 83, 20);
-    text-align: center;
+    text-align: center !important;
 
 
 }
@@ -135,11 +136,45 @@ p {
     margin: 0;
 }
 
+.productgold1 {
+  width: 100%;
+  .productgold1flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      width: 100%;
+    }
+    .productgold1content {
+      width: 100%;
+      margin-left: 5rem;
+      h3 {
+        margin-bottom: 1rem;
+        font-weight: 500;
+      }
+      h2 {
+        margin-bottom: 1rem;
+        font-size: 2.65rem;
+        font-weight: 900;
+        font-family: 'Playfair Display', serif;
+        color: rgb(220, 83, 20);
+      }
+      p {
+        width: 85%;
+      }
+      .buttonbox {
+        margin-top: 2rem;
+      }
+    }
+  }
+}
+
 .featured {
     width: 100%;
     h2 {
         font-size: 2rem;
-        font-weight: 700;
+        font-weight: 900;
+        font-family: 'Playfair Display', serif;
         text-align: center;
         margin-bottom: 1rem;
     }
@@ -147,7 +182,7 @@ p {
         height: 3px;
         width: 100px;
         margin: auto;
-        background-color: rgb(220, 83, 20);
+        background-color: #FA6900;
         margin-bottom: 1.5rem;
     }
    .featuredflex {
@@ -203,6 +238,9 @@ p {
     .fa-quote-right {
         color: rgb(220, 83, 20);
     }
+    h4 {
+      font-weight: 700;
+    }
     
 }
     }
@@ -239,11 +277,13 @@ p {
             h3 {
                 margin-bottom: 2rem;
                 font-size: 1.2rem;
+                font-weight: 600;
             }
             h4 {
                 margin-bottom: 2rem;
                 font-size: 3rem;
-                font-weight: 800;
+                font-weight: 900;
+                font-family: 'Playfair Display', serif;
             }
             p {
                 margin-bottom: 2rem;
@@ -348,6 +388,7 @@ p {
     strong {
         font-weight: 700;
     }
+
     .btn-block {
         background-color: rgb(220, 83, 20) !important;
         border-color: rgb(220, 83, 20) !important;
@@ -408,6 +449,39 @@ footer {
     z-index: 1;
 }
 
+.fa-envelope,
+.fa-lock {}
+
+.modalbutton {
+  background-color: rgb(220, 83, 20);
+  color: white;
+  border-radius: 45px;
+  transition: all 0.2s linear;
+}
+
+.modalbutton:hover,
+.modalbutton:active {
+  background-color: #FA6900;
+  color: white;
+}
+
+.modalorange {
+  color: rgb(220, 83, 20);
+  font-weight: 400;
+}
+.modalexit {
+  color: rgb(220, 83, 20) !important;
+  border-radius: 45px;
+  border-color: rgb(220, 83, 20) !important;
+  font-weight: 500;
+}
+
+.modalexit:hover,
+.modalexit:active {
+  color: rgb(220, 83, 20) !important;
+  border-color: rgb(220, 83, 20) !important;
+}
+
 
 
 .fa-star,
@@ -425,10 +499,13 @@ footer {
 
 .m0 {
     margin: 0 !important;
+    color: white !important;
 }
 
 .nav-tabs {
     background-color: rgb(220, 83, 20) !important;
+    margin: 0 !important;
+    border-radius: 0;
 }
 
 .navbar-nav {
@@ -563,8 +640,6 @@ button, input[type="submit"] {
     transition: color 0.2s ease-in-out, background 0.2s ease-in-out, border-color 0.2s ease-in-out;
 }
 button:hover, button:focus, button:active, input[type="submit"]:hover, input[type="submit"]:focus, input[type="submit"]:active {
-    background: #A7DBD8;
-    border-color:#69D2E7;
     color:#000;
     cursor: pointer;
 }
@@ -602,4 +677,10 @@ table td:nth-last-child(1) {
   color:#679996;
   padding:0.5em 0;
   margin:1em 0;
+}
+#emptycart:hover,
+#emptycart:active,
+#checkout:hover,
+#checkout:active {
+  background-color: transparent !important;
 }
