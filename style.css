@@ -102,6 +102,11 @@ html, body {
   display: none;
 }
 
+.modal-header {
+  background-color: #dc5314;
+  color: white;
+}
+
 .herobutton {
   background-color: #dc5314;
   color: white;
@@ -273,6 +278,15 @@ html, body {
 .featured .featuredflex .featuredcontent img {
   min-height: 315px;
   height: 315px;
+  background-color: #c2c2c2;
+}
+
+.btn-rounded {
+  background-color: #dc5314;
+  color: white;
+  font-weight: 500;
+  font-size: 1rem;
+  text-align: center !important;
 }
 
 .quotes {
@@ -319,8 +333,8 @@ html, body {
 }
 
 .testimonial-card:hover {
-  -webkit-transform: scale(1.025);
-          transform: scale(1.025);
+  -webkit-transform: scale(1.035);
+          transform: scale(1.035);
 }
 
 .popularproducts {
@@ -390,6 +404,10 @@ html, body {
   margin-left: 16.5%;
 }
 
+.close {
+  color: white;
+}
+
 .productdetails {
   width: 100%;
   padding: 5rem 0 5rem 0;
@@ -423,11 +441,13 @@ html, body {
 .productdetails .imgflex .img1 {
   width: 100%;
   margin-bottom: 8px;
+  background-color: #c2c2c2;
 }
 
 .productdetails .imgflex .smallimg {
-  width: 20%;
-  margin: 0 11px;
+  width: 25%;
+  margin: 0 20px;
+  background-color: #c2c2c2;
 }
 
 .productdetails .detailscontent {
