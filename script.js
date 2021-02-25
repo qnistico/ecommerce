@@ -129,11 +129,20 @@ function updateCartTotal(){
         
     }
     //update total on website HTML
+    if (document.getElementById("total")) {
+        document.getElementById("total").innerHTML = total.toFixed(2);
+        document.getElementById("carttable").innerHTML = carttable;
+        document.getElementById("itemsquantity").innerHTML = items;
+
+    }
+    /*
     document.getElementById("total").innerHTML = total.toFixed(2);
+    */
     //insert saved products to cart table
+    /*
     document.getElementById("carttable").innerHTML = carttable;
+    */
     //update items in cart on website HTML
-    document.getElementById("itemsquantity").innerHTML = items;
 }
 //user feedback on successful add
 function addedToCart(pname) {
@@ -158,3 +167,46 @@ function emptyCart() {
       }
     }
 }
+
+//let elm = `<div> kokoska </div>`;
+//document.querySelector('.productdetails').innerHTML = elm;
+/*
+let a = document.querySelectorAll(".imgflex > img");
+console.log(a);
+function changeContent(h1content) {
+    a.forEach(e => {
+      e.src = "whatever.img";
+    })
+    let pp = document.querySelectorAll(".detailscontent > p");
+    pp[0].innerText = "Something else";
+    pp[1].innerText = "Content details changed!";
+    let h1 = document.querySelector(".detailscontent > h1");
+    h1.innerText = `${h1content}`;
+    let h4 = document.querySelector(".detailscontent > h4");
+    h4.innerText = "Something else";
+    let h3 = document.querySelector(".detailscontent > h3");
+    h3.innerText = "Something else";
+  }
+  
+  changeContent(
+      "helloworld"
+  );
+  */
+
+ var template = document.querySelector('.detailscontent').innerHTML;
+
+ var data = {
+   h1: "Fuzzy Hat",
+   h4: "$45.00",
+   first: "I am the best",
+   detailspar: "best website",
+ }
+ 
+ document.querySelector('.detailscontent').innerHTML = populateTemplate(template, data);
+ 
+ function populateTemplate(template, data) {
+   for (i of Object.keys(data)) {
+     template = template.replace(`{${i}}`, data[i])
+   }
+   return template;
+ }
